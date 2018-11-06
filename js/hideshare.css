@@ -1,0 +1,74 @@
+/*
+  HIDESHARE CSS
+*/
+.hideshare-wrap {
+  xmargin: 0 auto;
+  xtext-align: center;
+  position: relative;
+}
+.hideshare-wrap .hideshare-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.hideshare-wrap li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin: 10px 5px 0;
+}
+.hideshare-wrap li {
+	border-bottom:0 !important;
+}
+.hideshare-wrap span {
+  display: none;
+}
+/*
+  Example CSS
+
+
+img {
+  margin: 0 auto 5em;
+  width: 200px;
+  height: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #444;
+}*/
+
+.share {
+  xdisplay: block;
+  xwidth: 200px;
+  xmargin: 0 auto;
+  xbackground: #dedede;
+  xcolor: #232323;
+ x -webkit-border-radius: 5px;
+ x -moz-border-radius: 5px;
+  x-ms-border-radius: 5px;
+  x-o-border-radius: 5px;
+  xborder-radius: 5px;
+ x padding: 1em 0;
+  xborder: 1px solid #444;
+  xtext-align: center;
+  xfont-weight: 700;
+  xtext-transform: uppercase;
+  xtext-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6);
+}
+.share:hover {
+ x background: #ffffff;
+}
+.hideshare-list a {
+  color: #dedede;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.hideshare-list a:hover {
+  color: #ffffff;
+}

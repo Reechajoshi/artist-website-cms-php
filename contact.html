@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kingfisher Strong Backstage :: Contact Us</title>
+  
+  
+
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="js/mapmarker.jquery.js"></script>
+    <script src="js/map.js"></script>
+
+
+	<script>
+		function validate_form()
+		{
+	var first_name = $('#f_name').val();
+	var last_name = $('#l_name').val();
+	var city = $("#source").val();
+	var msg = $("#message").val();
+
+	if( first_name == 'First Name' || last_name == 'Last Name' || city == 'BR' || msg == 'Message' )
+		alert( 'Please Provide All The Values' );
+	return true;
+
+}
+	</script>
+
+</head>
+<body>
+
+<div class="row">
+<div class="backstage-logo"><a href="index.html"><img src="img/backstage-logo.png" alt="kingfisher-strong-backstage-logo"></a></div>
+<div class="fridaymoviez-logo"><a href="http://www.fridaymoviez.com/" target="_blank"><img src="img/fridaymoviez-logo.png" alt="fridaymoviez-logo" ></a></div>
+
+</div><!-- End row -->
+
+<div class="top-banner">
+  <div class="container">
+  <div class="row">
+  <header>
+<div class="navbox-top">
+<!--<ul class="season">
+<li><a href="#">Season 1</a></li>
+<li><a href="#">Season 2</a></li>
+<li class="active"><a href="#">Season 3</a></li>
+</ul>-->
+
+<ul class="top-box right">
+<li><div class="basic-non-select-example"></div></li>
+<li ><!--<div id="searchwrapper"><form action="">
+<input type="text" class="searchbox" name="Search" value="Search" placeholder="Search..." />
+<input type="button" src="THE_BLANK_SUBMIT_BUTTON_IMAGE" class="searchbox_submit" value="" />
+</form>
+</div>-->
+</li>
+<li ><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+<li ><a href="#"><img src="img/twiter.png" alt="twiter"></a></li>
+<li ><a href="#"><img src="img/youtube.png" alt="youtube"></a></li>
+</ul>
+</div>
+</header>
+  </div></div>
+</div><!-- End top-banner -->
+
+<div class="menu-box">
+<div class="row">
+<div class="nav-box ">
+<nav>
+<ul class="nav">
+<li><a href="index.html">Home</a></li>
+<li class="divider"></li>
+<li><a href="artist.html">Artists</a></li>
+<li class="divider"></li>
+<li><a href="video.html">Videos</a></li>
+<li class="divider"></li>
+<li><a href="song.html">Songs</a></li>
+<li class="divider"></li>
+<li><a href="blog.html">Blogs</a></li>
+<li class="divider"></li>
+<li><a href="about-us.html">About</a></li>
+<li class="divider"></li>
+<li class="last active"><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+<!-- End Nav Section -->
+</div><!-- End nav-box -->
+</div>
+</div><!-- End about-box -->
+
+<section class="page-title">
+<h1>Contact Us</h1>
+</section><!-- End about-box -->
+<div class="breadcrumb"><a href="index.html">Home /</a> Contact Us</div>
+
+<div id="contact" class="row box">
+<div class="box1 left">
+<p>G-1, New Udyog Mandir 2,<br>
+Moghul Lane, Mahim (W),<br>
+Mumbai 400016, India</p>
+<p><span>Phone: </span>+91 22 40047856 / 7</p>
+<p><span>Email: </span><a href="mailto:music@twilighten.com">music@twilighten.com</a></p>
+</div>
+
+<div class="box2 left">
+<form id="contact_us" action="contact.html" > 
+<table width="200" border="1">
+  <tr>
+    <td><input type="text" id="f_name" class="contact" name="First Name" value="First Name" /></td>
+    <td><input type="text" id="l_name" class="contact" name="Last Name" value="Last Name" /></td>
+  </tr>
+  <tr>
+    <td><input type="text" id="phone" class="contact" name="Phone" value="Phone" /></td>
+    <td rowspan="2"><textarea id="message" rows="4" cols="50" class="textarea" >Message</textarea></td>
+  </tr>
+  <tr>
+    <td><div class="selectParent1"><select id="source">
+  <option selected="selected" id="filter-none" value="BR">Select City</option>
+  <option value="FR" id="filter-latestvideos">1</option>
+  <option value="DE" id="filter-movietrailers">2</option>
+</select></div></td>
+  </tr>
+  <tr>
+    <td><input type="file" name="uploaded_file" class="file" /></td>
+    <td><input type="button" class="contact-button" value="CLEAR" /> <input type="button" class="contact-button" onclick="validate_form();" value="SEND" /></td>
+  </tr>
+</table>
+
+</form>
+</div>
+
+<div class="clear"></div>
+</div>
+<div id="map" ></div>
+ 
+
+<div class="footer">
+<div class="row">
+<div class="left">&copy; 2014 <a target="_blank" href="http://twilighten.com/">Twilight Entertainment PVT LTD.</a> All rights reserved.</div>
+<div class="right"><a href="about-us.html">About us</a> | <a href="contact.html">Contact Us</a> | <a href="privacy_policy.html">Privacy Policy</a></div>
+</div>
+</div><!-- End footer -->
+
+</body>
+</html>
